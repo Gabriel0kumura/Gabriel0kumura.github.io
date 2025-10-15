@@ -9,7 +9,7 @@ body{
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   background-color: #000;
-  color: #9d00ff;
+  color: #7F56BC;
 }
 
 .container{
@@ -25,7 +25,7 @@ body{
 .share-button{
   display: flex;
   align-self: flex-end;
-  color: #9d00ff;
+  color: #7F56BC;
 }
 
 .share-icon{
@@ -61,7 +61,7 @@ img{
   justify-content: space-between;
   background-color: #060606;
   padding: 10px 15px;
-  color: #9d00ff;
+  color: #7F56BC;
   text-decoration: none;
   margin-bottom: 24px;
 }
