@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>ジップ | Links</title>
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: "Georgia", serif;
+      min-height: 100dvh;
+      background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+        url('fundo.jpg') center/cover no-repeat fixed;
+      color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: env(safe-area-inset-top) 20px env(safe-area-inset-bottom);
+      text-align: center;
+      position: relative;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.4);
+      margin: 0 auto 16px;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    .name {
+      font-size: clamp(26px, 6vw, 34px);
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .username {
+      font-size: 14px;
+      opacity: 0.6;
+      margin-bottom: 28px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.06);
+      color: #f1f1f1;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: transform .2s ease, background .2s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .link:active {
+      transform: scale(0.97);
+    }
+
+    .link:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      opacity: 0.9;
+    }
+
+    .arrow {
+      font-size: 18px;
+      opacity: 0.6;
+    }
+
+    .angel {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      width: 220px;
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    img {
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <div class="avatar">
+      <img src="perfil.jpg" alt="Avatar Okamura" />
+    </div>
+
+    <div class="name">一人で</div>
+    <div class="username">🦹</div>
+
+
+    <a class="link" href="https://github.com/Gabriel0kumura/Estrat-gia-FF">
+      <div class="left">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" />
+        <span>Pac4 Biel</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="link" href="https://www.instagram.com/gabriel.okumuraa_">
+      <div class="left">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" />
+        <span>Instagram</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+     <a class="link" href="https://open.spotify.com/user/31mojyts442bkh4uvlla3yyfmi6u?si=ujF21df9Q_y6ff21lqy8lA">
+      <div class="left">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" />
+        <span>Spotify</span>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+
+    <img class="angel" src="https://i.imgur.com/2yaf2wb.png" alt="" />
+  </main>
+</body>
+</html>
